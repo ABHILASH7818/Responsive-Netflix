@@ -1,0 +1,202 @@
+body{
+    
+    background-color: black;
+}
+header{
+    width: 100%;
+   height: 44rem;
+   background-image: url(hero\ image.jpg);
+   background-size: cover;
+   border-bottom: 8px solid rgb(40, 39, 39);
+}
+.head{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.nav-right{
+    display: flex;
+}
+.language{
+    display:flex ;
+   justify-content: center;
+   align-items: center;
+    background-color: rgba(0, 0, 0, 0.037);
+    padding: 0rem .5rem;
+    border: 0.5px solid rgba(215, 212, 212, 0.627);
+    border-radius: 6px;
+    height: 2rem;
+    margin-right: .5rem;
+}
+.lang{
+    background-color: rgba(0, 0, 0, 0.289);
+    color: white;
+    border: none;
+}
+.sign-in  button{  
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    height: 2rem;
+    padding: 0rem .5rem;
+    margin-right: .5rem;
+ 
+}
+.head-content{
+    color: white;
+    margin-top: 10rem;
+    text-align: center;
+}
+.head-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.head-content h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.head-content p{
+    font-size: 1.25rem;
+    font-weight: 400;
+   margin-bottom: 0.8rem;
+}
+.email{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.email input{
+    font-size: 1.1rem;
+    padding: 1rem .8rem;
+    display: flex;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
+    border:0.5px solid rgba(128, 128, 128, 0.7);
+    flex-grow: 1;
+}
+
+.email button{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+
+/* main-body */
+
+.text-section h2{
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+.text-section p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.image-section{
+   position: relative;
+   overflow-y: hidden;
+}
+
+.image-section video{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    z-index:-1;
+   
+}
+
+/* question-section */
+
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem ;
+    background-color: rgb(65, 65, 65);
+    border: 1px solid rgb(52, 52, 52);
+    margin-bottom: 1rem;
+}
+.question p{
+    font-size: 1.4rem;
+}
+
+/* footer */
+.footer{
+    padding: 2rem 8rem;
+    color: white;
+}
+.footer a{
+    color: rgba(159, 158, 158, 0.853);
+    text-decoration: none;
+   
+}
+li{
+    list-style: none;
+    margin: .4rem;
+}
+.links
+{
+    display: flex;
+   justify-content: space-between;
+}
+
+@media (max-width:768px)
+{
+    .head-content{
+        color: white;
+        margin-top: 6rem;
+        text-align: center;
+    }
+    .head-content h1{
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .email{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        gap: 8px;
+    }
+    .question{
+        padding: 1.2rem ;  
+    }
+    .question p{
+        font-size: 1.2rem;
+    }
+    .footer{
+        padding: 1rem 1rem;
+        color: white;
+    }
+}
+@media (max-width:576px)
+{
+    .email{
+       display: flex;
+       flex-direction: column;
+        gap: 10px;
+    }
+    .email input{
+        width: 88%;
+        margin: auto;
+    }
+    .email button{
+        width: 60%;
+        margin: auto;
+    }
+   
+}
